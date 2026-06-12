@@ -93,7 +93,7 @@ export const getAIRecommendations = async (title) => {
   try {
 
     const response = await axios.get(
-      `http://localhost:5001/recommend/${encodeURIComponent(title)}`
+      `http://https://cinematch-ai-zckg.onrender.com/recommend/${encodeURIComponent(title)}`
     )
 
     return response.data
@@ -117,7 +117,7 @@ export const addToWatchlist = async (
   try {
 
     const response = await axios.post(
-      "http://localhost:5000/api/preferences/watchlist",
+      "http://${import.meta.env.VITE_API_URL}/api/preferences/watchlist",
       {
         email,
         movieTitle
@@ -142,7 +142,7 @@ export const likeMovie = async (
   try {
 
     const response = await axios.post(
-      "http://localhost:5000/api/preferences/like",
+      "http://${import.meta.env.VITE_API_URL}/api/preferences/like",
       {
         email,
         movieTitle

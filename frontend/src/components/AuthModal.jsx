@@ -21,7 +21,7 @@ function AuthModal({ closeModal }) {
           : "register"
   
       const response = await axios.post(
-        `http://localhost:5000/api/auth/${endpoint}`,
+        `http://${import.meta.env.VITE_API_URL}/api/auth/${endpoint}`,
         {
           name,
           email,
