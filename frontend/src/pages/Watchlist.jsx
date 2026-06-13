@@ -18,7 +18,7 @@ function Watchlist() {
         )
 
         const response = await axios.get(
-          `http://localhost:5000/api/preferences/watchlist/${userInfo.email}`
+          `${import.meta.env.VITE_API_URL}/api/preferences/watchlist/${userInfo.email}`
         )
 
         setMovies(
