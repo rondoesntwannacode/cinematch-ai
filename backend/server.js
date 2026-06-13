@@ -19,7 +19,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://cinematch-ai-frontend.vercel.app"
+      "https://cinematch-ai-frontend.vercel.app",
+      "https://cinematch-ai-frontend-loltnpuv-ranadeep-das-projects.vercel.app"
     ],
     credentials: true
   })
