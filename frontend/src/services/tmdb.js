@@ -117,7 +117,7 @@ export const addToWatchlist = async (
   try {
 
     const response = await axios.post(
-      "http://${import.meta.env.VITE_API_URL}/api/preferences/watchlist",
+      "${import.meta.env.VITE_API_URL}/api/preferences/watchlist",
       {
         email,
         movieTitle
@@ -142,7 +142,7 @@ export const likeMovie = async (
   try {
 
     const response = await axios.post(
-      "http://${import.meta.env.VITE_API_URL}/api/preferences/like",
+      "${import.meta.env.VITE_API_URL}/api/preferences/like",
       {
         email,
         movieTitle
