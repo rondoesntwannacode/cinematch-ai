@@ -93,7 +93,7 @@ export const getAIRecommendations = async (title) => {
   try {
 
     const response = await axios.get(
-      `http://https://cinematch-ai-zckg.onrender.com/recommend/${encodeURIComponent(title)}`
+      `https://cinematch-ai-zckg.onrender.com/recommend/${encodeURIComponent(title)}`
     )
 
     return response.data
