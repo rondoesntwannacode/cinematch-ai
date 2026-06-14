@@ -1,3 +1,5 @@
+console.log("VITE_API_URL =", import.meta.env.VITE_API_URL)
+
 import axios from "axios"
 
 const API_KEY = "9aa9fc11780b49d18a3cfe0b04d9ee19"
@@ -117,7 +119,7 @@ export const addToWatchlist = async (
   try {
 
     const response = await axios.post(
-      "${import.meta.env.VITE_API_URL}/api/preferences/watchlist",
+      `${import.meta.env.VITE_API_URL}/api/preferences/watchlist`,
       {
         email,
         movieTitle
@@ -142,7 +144,7 @@ export const likeMovie = async (
   try {
 
     const response = await axios.post(
-      "${import.meta.env.VITE_API_URL}/api/preferences/like",
+      `${import.meta.env.VITE_API_URL}/api/preferences/like`,
       {
         email,
         movieTitle
