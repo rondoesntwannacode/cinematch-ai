@@ -1,10 +1,12 @@
-console.log("VITE_API_URL =", import.meta.env.VITE_API_URL)
+
 
 import axios from "axios"
 
 const API_KEY = "9aa9fc11780b49d18a3cfe0b04d9ee19"
 
 const BASE_URL = "https://api.themoviedb.org/3"
+
+console.log("VITE_API_URL =", import.meta.env.VITE_API_URL)
 
 export const getTrendingMovies = async () => {
 
